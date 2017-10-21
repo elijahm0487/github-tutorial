@@ -47,7 +47,11 @@ _by Mr. Matos (The Elijah one)_
 
 ---
 ## Workflow & Commands
-
+##### From here on out, you're going to be using the above commannds in sequence as your github process. Anytime you make changes to a file within a repository, you'll want to use the commands. 
+1. `Git add` - Adds at least one file with changes to the staging area, preparing that file for a commit. 
+2. `git commit -m` Takes the snapshot and attatches a commit message as a description. Every commit message should be in present tense. 
+3. `git push` - Sends your changes with the commit to your remote repository (github). 
+4. `git status` - Should be used constantly, letting you track modifications, commits and what's ready to be pushed. 
 
 
 ---
