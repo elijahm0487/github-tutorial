@@ -30,8 +30,18 @@ _by Mr. Matos (The Elijah one)_
 ---
 ## Repository Setup
 * Now that the preliminary stuff is out of the way, you're ready to start working in the command line. Start by creating a repo (**mkdir** and _whatever you want to name the repo_). 
-    * Change directories (**cd**) into the repo and type **git init**. DO NOT  GIT INIT IN YOUR WORKSPACE (but if you do, there's a fix). 
-    * Create 
+* Change directories (**cd**) into the repo and type **git init**. DO NOT  GIT INIT IN YOUR WORKSPACE (but if you do, there's a fix). 
+* Create a file using **touch** alongside your name for the file (for example, touch **apples** will create a file called apples). 
+* Now, you're ready to git add. Typing git add adds at least one file to the staging area from the working directory, preparing it for a commit. You can do this a few ways:
+    * You can git type **git add** and **include the name** of the specific file that you want to add. 
+    * You can type **git add .** to add all files within the working directory that have changes to the staging area. 
+    * You can type **git add --all** to add all files in the working directory, even if they have been deleted to the staging area. 
+* Next up is git commit. Git commit is the stage in which the snapshot function of git is activated. To git commit successfully, you'll need to type **git commit -m** along with a **commit message** wrapped in quotes. 
+* Finally, you're ready to push to your remote repository. There are two important steps to this:
+    * Typing **git remote add origin URL** is going to establish the bridge between your local (c9) and remote (github). 
+    * Typing **git push -u origin master** ensures that your remote is your default push option. This will make sending code to github a much smoother process as you'll be able to use the **git push** command on its own in the future. 
+* MAJOR KEY: Remember to use **git status**  constantly! The git status command will let you know what's been modified (in red text), what's been committed (green text) and when there are no new commits to be made.
+
 
 
 
