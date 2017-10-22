@@ -56,3 +56,15 @@ _by Mr. Matos (The Elijah one)_
 
 ---
 ## Rolling Back Changes
+##### At times, working in git can be frustrating. Coders oftentimes want to revert to previous versions of our files. There are a few places users can rollback their changes from. 
+*  If a user's edits are very new and have not been added yet, they should use **`git checkout --`** and the name of their file to go back to the last version of the file. 
+*  If a user has added a file to the staging area and wants to remove it, they should type **`git reset HEAD`** alongside the _name of their file_ to undo the add. 
+*  Undoing commits has a bit more variation as oppose to other ways of undoing in git: 
+    *  To revert back to the previous commit, users will want to use **`git reset --hard HEAD~1`**. This command will completely erase or nuke the current commit from the pus or commit stage, reverting the repository back to the previous commit.
+    *  If you want to retain the version of your file that you committed so you can make some changes, you'll want to use **`git reset HEAD~1`**. Leaving the `hard` portion of the command off will revert back to the previous commit for editing purposes. 
+    *  **`git reset --soft HEAD~1`** wil; allow users to retain their changes up to the adding stage. The previous two commands will bring users back to the editing stage, but this one will bring them to the point between adding and committing. 
+    *  At times, users want to change, or revert their commits. To do so, you'll need to use **`git revert`** along with the _commit code_ of the commit you want to revert to. Sounds difficult trying to find commit codes huh? Nope! Just use **`git log`**! Git log will give you the rundown of all the commits you've done with their corresponding commit codes. So to revert to a previous commit, type **`git revert`** with your preferred commit code. 
+
+
+
+
